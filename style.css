@@ -1,0 +1,52 @@
+.main{
+    width: 800px;
+    height: 200px;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+}
+.dino{
+    background-image: url('/tyrannosaurus-dino-t-rex-t-rex-chrome-vr-jump-trex-runner-lava-jump-dinosaur.jpg');
+    height: 40px;
+    position: relative;
+    top: 10rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.kaktus{
+    background-image: url('/cactus-5375863_960_720.png');
+    height: 40px;
+    position: relative;
+    top: 10.5rem;
+    left: 580px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: anim 1.2s infinite linear;
+}
+@keyframes anim {
+    0%{
+        left: 800px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+.jumping{
+    animation: jump 0.5s linear;
+}
+@keyframes jump {
+    0%{
+        top: 150px;
+    }
+    20%{
+        top: 80px;
+    }
+    50%{
+        top: 50px;
+    }
+    80%{
+        top: 80px;
+    }
+    100%{
+        top: 150px;
+    }
+}
